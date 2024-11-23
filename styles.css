@@ -1,0 +1,98 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Habibi', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #06A816;
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Irish Grover', cursive;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.25em;
+}
+
+/* Navigation */
+nav {
+    background-color: #E75D02;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #E75D02;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Fruits and Vegetables Lists */
+section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section ul li {
+    text-align: center;
+    flex: 1 1 calc(25% - 10px);
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #E75D02;
+    border-radius: 5px;
+}
+
+section ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #06A816;
+    color: #ffffff;
+}
