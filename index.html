@@ -8,58 +8,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Fiona's Farm</h1>
-        <p>Fresh from our farm to your family table</p>
+
+    <header class="header-green">
+        <div class="logo">
+            <img src="images/logo.png" alt="Fiona's Farm Logo">
+        </div>
+        <div class="header-intro">
+            <h1>Fiona's Farm</h1>
+            <p>Fresh from our farm to your family table</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#fruits">Fruits</a></li>
+                <li><a href="#vegetables">Vegetables</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#fruits">Fruits</a></li>
-            <li><a href="#vegetables">Vegetables</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section id="fruits">
-        <h2>Fruits</h2>
-        <p>Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits...</p>
-        <h3>Fruits for Sale</h3>
-        <ul>
-            <li><img src="images/apples.jpg" alt="Apples"> Apples</li>
-            <li><img src="images/oranges.jpg" alt="Oranges"> Oranges</li>
-            <li><img src="images/peaches.jpg" alt="Peaches"> Peaches</li>
-            <!-- Add remaining fruit items -->
-        </ul>
-    </section>
+    <main>
+        <section id="fruits">
+            <h2>Fruits</h2>
+            <p>Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits...</p>
+            <div class="grid">
+                <div><img src="images/apples.png" alt="Apples"><div class="label">Apples</div></div>
+                <div><img src="images/oranges.png" alt="Oranges"><div class="label">Oranges</div></div>
+                <div><img src="images/peaches.png" alt="Peaches"><div class="label">Peaches</div></div>
+                <div><img src="images/strawberries.png" alt="Strawberries"><div class="label">Strawberries</div></div>
+                <div><img src="images/blueberries.png" alt="Blueberries"><div class="label">Blueberries</div></div>
+                <div><img src="images/raspberries.png" alt="Raspberries"><div class="label">Raspberries</div></div>
+                <div><img src="images/cherries.png" alt="Cherries"><div class="label">Cherries</div></div>
+                <div><img src="images/grapes.png" alt="Grapes"><div class="label">Grapes</div></div>
+                <div><img src="images/watermelons.png" alt="Watermelons"><div class="label">Watermelons</div></div>
+                <div><img src="images/cantalopes.png" alt="Cantaloupes"><div class="label">Cantaloupes</div></div>
+            </div>
+        </section>
 
-    <section id="vegetables">
-        <h2>Vegetables</h2>
-        <p>At our farm, we are dedicated to growing a diverse array of vegetables...</p>
-        <h3>Vegetables for Sale</h3>
-        <ul>
-            <li><img src="images/broccoli.jpg" alt="Broccoli"> Broccoli</li>
-            <li><img src="images/lettuce.jpg" alt="Lettuce"> Lettuce</li>
-            <li><img src="images/eggplant.jpg" alt="Eggplant"> Eggplant</li>
-            <!-- Add remaining vegetable items -->
-        </ul>
-    </section>
+        <section id="vegetables">
+            <h2>Vegetables</h2>
+            <p>At our farm, we are dedicated to growing a diverse array of vegetables...</p>
+            <div class="grid">
+                <div><img src="images/broccoli.png" alt="Broccoli"><div class="label">Broccoli</div></div>
+                <div><img src="images/lettuce.png" alt="Lettuce"><div class="label">Lettuce</div></div>
+                <div><img src="images/eggplant.png" alt="Eggplant"><div class="label">Eggplant</div></div>
+                <div><img src="images/spinach.png" alt="Spinach"><div class="label">Spinach</div></div>
+                <div><img src="images/bean-sprout.png" alt="Bean Sprout"><div class="label">Bean Sprout</div></div>
+                <div><img src="images/peas.png" alt="Peas"><div class="label">Peas</div></div>
+                <div><img src="images/bell-pepper.png" alt="Bell Pepper"><div class="label">Bell Pepper</div></div>
+                <div><img src="images/carrot.png" alt="Carrot"><div class="label">Carrot</div></div>
+                <div><img src="images/potato.png" alt="Potato"><div class="label">Potato</div></div>
+                <div><img src="images/cucumber.png" alt="Cucumber"><div class="label">Cucumber</div></div>
+                <div><img src="images/tomato.png" alt="Tomato"><div class="label">Tomato</div></div>
+                <div><img src="images/radish.png" alt="Radish"><div class="label">Radish</div></div>
+            </div>
+        </section>
+    </main>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>1234 Fake Street, Mesa, AZ 85111</p>
-        <p>(480) 555-1234</p>
-        <h3>Hours</h3>
-        <ul>
-            <li>Monday: Closed</li>
-            <li>Tuesday: 6:00 AM - 2:00 PM</li>
-            <li>Friday: 6:00 AM - 9:00 PM</li>
-            <!-- Add remaining days -->
-        </ul>
-    </section>
 
     <footer>
-        <p>Copyright 2024</p>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>1234 Fake Street, Mesa, AZ 85111</p>
+            <p>(480) 555-1234</p>
+        </div>
+        <div class="hours">
+            <h3>Hours</h3>
+            <p>Monday: Closed</p>
+            <p>Tuesday - Friday: 6:00 AM - 2:00 PM</p>
+            <p>Saturday - Sunday: 6:00 AM - 9:00 PM</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Fiona's Farm</p>
+        </div>
     </footer>
 </body>
 </html>
