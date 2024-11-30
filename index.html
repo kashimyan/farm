@@ -4,82 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiona's Farm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header-green">
-        <div class="logo">
-            <img src="images/logo.png" alt="Fiona's Farm Logo">
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <h1 class="logo">Fiona's Farm</h1>
+                <p class="slogan">Fresh from our farm to your family table</p>
+            </div>
+            <nav class="menu">
+                <a href="#fruits" class="menu-button">Fruits</a>
+                <a href="#vegetables" class="menu-button">Vegetables</a>
+            </nav>
         </div>
-        <div class="header-intro">
-            <h1>Fiona's Farm</h1>
-            <p>Fresh from our farm to your family table</p>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#fruits">Fruits</a></li>
-                <li><a href="#vegetables">Vegetables</a></li>
-            </ul>
-        </nav>
     </header>
+    
 
-
-    <main>
-        <section id="fruits">
-            <h2>Fruits</h2>
-            <p>Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits...</p>
-            <div class="grid">
-                <div><img src="images/apples.png" alt="Apples"><div class="label">Apples</div></div>
-                <div><img src="images/oranges.png" alt="Oranges"><div class="label">Oranges</div></div>
-                <div><img src="images/peaches.png" alt="Peaches"><div class="label">Peaches</div></div>
-                <div><img src="images/strawberries.png" alt="Strawberries"><div class="label">Strawberries</div></div>
-                <div><img src="images/blueberries.png" alt="Blueberries"><div class="label">Blueberries</div></div>
-                <div><img src="images/raspberries.png" alt="Raspberries"><div class="label">Raspberries</div></div>
-                <div><img src="images/cherries.png" alt="Cherries"><div class="label">Cherries</div></div>
-                <div><img src="images/grapes.png" alt="Grapes"><div class="label">Grapes</div></div>
-                <div><img src="images/watermelons.png" alt="Watermelons"><div class="label">Watermelons</div></div>
-                <div><img src="images/cantalopes.png" alt="Cantaloupes"><div class="label">Cantaloupes</div></div>
+    <section id="fruits" class="content-section">
+        <h2>Fruits</h2>
+        <p>Welcome to our farm, where we take pride in growing a variety of delicious and nutritious fruits. Our commitment to sustainable farming practices ensures that every bite of our fruit is bursting with natural flavor and goodness. From the orchard to your table, we offer a selection of fresh, hand-picked fruits that are perfect for snacking, baking, and cooking. Experience the taste of nature's bounty with our premium quality fruits.</p>
+        <h3>Fruits for Sale</h3>
+        <div class="fruit-grid">
+            <div class="fruit-item">
+                <img src="images/apples.png" alt="Apples">
+                <div class="fruit-name">Apples</div>
             </div>
-        </section>
-
-        <section id="vegetables">
-            <h2>Vegetables</h2>
-            <p>At our farm, we are dedicated to growing a diverse array of vegetables...</p>
-            <div class="grid">
-                <div><img src="images/broccoli.png" alt="Broccoli"><div class="label">Broccoli</div></div>
-                <div><img src="images/lettuce.png" alt="Lettuce"><div class="label">Lettuce</div></div>
-                <div><img src="images/eggplant.png" alt="Eggplant"><div class="label">Eggplant</div></div>
-                <div><img src="images/spinach.png" alt="Spinach"><div class="label">Spinach</div></div>
-                <div><img src="images/bean-sprout.png" alt="Bean Sprout"><div class="label">Bean Sprout</div></div>
-                <div><img src="images/peas.png" alt="Peas"><div class="label">Peas</div></div>
-                <div><img src="images/bell-pepper.png" alt="Bell Pepper"><div class="label">Bell Pepper</div></div>
-                <div><img src="images/carrot.png" alt="Carrot"><div class="label">Carrot</div></div>
-                <div><img src="images/potato.png" alt="Potato"><div class="label">Potato</div></div>
-                <div><img src="images/cucumber.png" alt="Cucumber"><div class="label">Cucumber</div></div>
-                <div><img src="images/tomato.png" alt="Tomato"><div class="label">Tomato</div></div>
-                <div><img src="images/radish.png" alt="Radish"><div class="label">Radish</div></div>
+            <div class="fruit-item">
+                <img src="images/oranges.png" alt="Oranges">
+                <div class="fruit-name">Oranges</div>
             </div>
-        </section>
-    </main>
+            <div class="fruit-item">
+                <img src="images/peaches.png" alt="Peaches">
+                <div class="fruit-name">Peaches</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/strawberries.png" alt="Strawberries">
+                <div class="fruit-name">Strawberries</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/blueberries.png" alt="Blueberries">
+                <div class="fruit-name">Blueberries</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/raspberries.png" alt="Raspberries">
+                <div class="fruit-name">Raspberries</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/cherries.png" alt="Cherries">
+                <div class="fruit-name">Cherries</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/pears.png" alt="Pears">
+                <div class="fruit-name">Pears</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/plums.png" alt="Plums">
+                <div class="fruit-name">Plums</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/grapes.png" alt="Grapes">
+                <div class="fruit-name">Grapes</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/watermelons.png" alt="Watermelons">
+                <div class="fruit-name">Watermelons</div>
+            </div>
+            <div class="fruit-item">
+                <img src="images/cantalopes.png" alt="Cantaloupes">
+                <div class="fruit-name">Cantaloupes</div>
+            </div>
+        </div>
+    </section>
 
+    <section id="vegetables" class="content-section">
+        <h2>Vegetables</h2>
+        <p>At our farm, we are dedicated to growing a diverse array of vegetables that are both healthy and delicious. Our vegetables are cultivated using sustainable and eco-friendly methods to ensure the highest quality and flavor. Whether you are looking to create a fresh salad, cook a hearty meal, or simply enjoy a nutritious snack, our farm-fresh vegetables are the perfect choice. Taste the difference of locally grown produce with our vibrant and wholesome vegetables.</p>
+        <h3>Vegetables for Sale</h3>
+        <div class="vegetable-grid">
+            <div class="vegetable-item">
+                <img src="images/broccoli.png" alt="Broccoli">
+                <div class="vegetable-name">Broccoli</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/lettuce.png" alt="Lettuce">
+                <div class="vegetable-name">Lettuce</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/eggplant.png" alt="Eggplant">
+                <div class="vegetable-name">Eggplant</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/spinach.png" alt="Spinach">
+                <div class="vegetable-name">Spinach</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/bean-sprout.png" alt="Bean Sprout">
+                <div class="vegetable-name">Bean Sprout</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/peas.png" alt="Peas">
+                <div class="vegetable-name">Peas</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/bell-pepper.png" alt="Bell Pepper">
+                <div class="vegetable-name">Bell Pepper</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/carrot.png" alt="Carrot">
+                <div class="vegetable-name">Carrot</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/potato.png" alt="Potato">
+                <div class="vegetable-name">Potato</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/cucumber.png" alt="Cucumber">
+                <div class="vegetable-name">Cucumber</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/tomato.png" alt="Tomato">
+                <div class="vegetable-name">Tomato</div>
+            </div>
+            <div class="vegetable-item">
+                <img src="images/radish.png" alt="Radish">
+                <div class="vegetable-name">Radish</div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="contact">
-            <h3>Contact</h3>
-            <p>1234 Fake Street, Mesa, AZ 85111</p>
-            <p>(480) 555-1234</p>
-        </div>
-        <div class="hours">
-            <h3>Hours</h3>
-            <p>Monday: Closed</p>
-            <p>Tuesday - Friday: 6:00 AM - 2:00 PM</p>
-            <p>Saturday - Sunday: 6:00 AM - 9:00 PM</p>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2024 Fiona's Farm</p>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <address>
+                    1234 Fake Street,<br>
+                    Mesa, AZ 85111<br>
+                    (480) 555-1234
+                </address>
+            </div>
+            <div class="footer-column">
+                <h3>Hours</h3>
+                <p>
+                    Monday Closed<br>
+                    Tuesday 6:00 AM - 2:00 PM<br>
+                    Wednesday 6:00 AM - 2:00 PM<br>
+                    Thursday 6:00 AM - 2:00 PM<br>
+                    Friday 6:00 AM - 9:00 PM<br>
+                    Saturday 6:00 AM - 9:00 PM<br>
+                    Sunday 6:00 AM - 5:00 PM
+                </p>
+            </div>
         </div>
     </footer>
+
+    <a href="#" id="back-to-top">Top</a>
+
 </body>
+
+<div class="copyright" >  Copyright 2024</div>
+
 </html>

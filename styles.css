@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+header {
+    padding: 0;
+    background-color: #06A816;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.header-left {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    font-family: 'Irish Grover', cursive;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+    margin: 20px;
+}
+
+.slogan {
+    font-size: 1.25em;
+    color: #ffffff;
+
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu-button {
+    font-family: 'Habibi', serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #E75D02;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #ffffff;
+    color: #06A816;
+
+}
+
+h1 {
+    font-family: 'Irish Grover';
+    font-size: 2.5em;
+
+}
+
+h2 {
+    font-family: 'Irish Grover';
+    font-size: 2.5em;
+ 
+}
+
+h3 {
+    font-family: 'Irish Grover';
+    font-size: 1.75em;
+    text-align: center;
+
+}
+
+p {
+    font-family: 'Habibi';
+    font-size: 1.25em;
+    color: #000000;
+}
+
+body {
+    font-family: 'Habibi', serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #E75D02;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#back-to-top:hover {
+    background-color: #ffffff;
+    color: #06A816;
+    z-index: 10;
+}
+
+.content-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.fruit-grid, .vegetable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.fruit-item, .vegetable-item {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.fruit-item img, .vegetable-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.fruit-name, .vegetable-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 50px;
+    background-color: #00000050;
+    color: #ffffff;
+    font-size: 1.25em;
+    line-height: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: #06A816;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1.25em;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.copyright {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+@media (max-width: 350px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .menu {
+        background-color: #ffffff;
+    }
+    .menu-button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 580px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: row;
+        background-color: #ffffff;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 690px) {
+    .header-content {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 691px) {
+    .header-content {
+        flex-direction: row;
+    }
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 350px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 580px) {
+    .footer-content {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 690px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-column {
+        flex: 1;
+    }
+}
+
+@media (min-width: 691px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-column {
+        flex: 1;
+    }
+}
